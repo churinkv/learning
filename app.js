@@ -8,11 +8,11 @@ app.get("/",function(req,res){
   <html lang="en">\
   <head>\
     <meta charset="UTF-8">\
-    <title>Document</title>\
+    <title>form</title>\
   </head>\
   <body>\
-  <form action="" method="post">\
-    <input type="text" style="font-size:24px;"/>\
+  <form class="" action="page_test" method="post">\
+    <input type="text" name="text" value=""/>\
     <button>Нажми</button>\
   </form>\
   </body>\
@@ -23,8 +23,10 @@ app.get("/",function(req,res){
   res.send(form)
 })
 
-app.listen(3000)
-app.post ("/our_post",function functionName(req,res) {
-  res.send ("<div style='font-size: 24px'>Ответ на пост запрос</div>")
-
+app.listen("3000", function (){
+  console.log("server v dele")
+})
+app.post ("/our_post",function (req,res) {
+  console.log(req.body)
+  res.send ("Hello ot servera vot vash vvod: "+req.body.text)
 })
