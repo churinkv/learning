@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // Упражнение 1. Объявите массив Numbers. Проинициализируйте его пятью числовыми значениями. Выведите в консоль значения 2-го и предпоследнего элементов, а также размер массива Numbers.
+
+    var Numbers = [0, 1, 2, 3, 4]
+    console.log('[0, 1, 2, 3, 4]');
+    console.log('Выводим в консоль значения 2-го и предпоследнего: ', Numbers[1], ',', Numbers.length-2);
+    console.log('Размер массива = ', Numbers.length);
+
+    //Упражнение 2. Объявите массив Letters. Проинициализируйте его пятью строками. Поменяйте местами значения 1-го и 3-го элементов. Выведите в консоль значения всех элементов массива.Подсказка: Вывести весь массив можно так - console.log(Letters)
+
+
+    var Letters = ["Мерседес", "Шкода", "Тойота", "Ниссан", "Мазда"];
+    console.log(["Мерседес", "Шкода", "Тойота", "Ниссан", "Мазда"]);
+    [Letters[0], Letters[2]] = [Letters[2], Letters[0]];
+    console.log(Letters);
+
+    // Упражнение 3. Создайте массив А, заполнив его тремя случайными числами. Выведите эти элементы в консоль.Подсказка: методы Math.random() и Math.floor() вам пригодятся.
+
+    var A = [Math.random(), Math.random(), Math.random()]
+    console.log(A);
+
+
+    // Упражнение 4. Создайте массив А, заполнив его тремя случайными числами, выполните следующие действия:
+    // • выведите эти элементы в консоль
+    // • добавьте в начало и конец массива число 100
+    // • выведите массив в консоль
+    // • удалите первый и последний элемент массива
+    // • выведите массив в консоль
+    // • очистите массив, обнулив его размер: A.length=0
+    // • Выведите массив в консоль
+
+    var A = [Math.random(), Math.random(), Math.random()]
+    console.log(A)
+    A.push(100), A.unshift(100)
+    console.log(A)
+    A.shift(), A.pop()
+    console.log(A);
+    A.length = 0
+    console.log(A);
+    // Упражнение 5. Применить join к массиву var colors = ["white","blue","yellow"]. Результаты вывести в консоль.
+
+    var colors = [" white "," blue "," yellow "]
+    console.log(colors.join(','));
+    console.log(colors.join('и'));
+    console.log(colors.join('или'));
+    console.log(colors.join(','));
+    console.log(colors.join(':'));
+    console.log(A);
+    A.length = 0
+
+    // Упражнение 6.
+
+    var colors = ["white", "blue", "yellow"]
+    var numbers = [1, 2, 3]
+    var colorNumber = colors.concat(numbers)
+
+    console.log(colors);
+    console.log(colorNumber);
+
+
+    // Упражнение 7.
+
+    var arr = [1,2,3,4,5,6]
+
+
+    console.log(arr.slice(1));
+    console.log(arr.slice(1,4));
+    console.log(arr.slice(3,4));
+    console.log(arr.slice(-2));
+    console.log(arr.slice(arr.length-2));
+
+
+    console.log(arr.slice(-3,-1));
+    console.log(arr.slice(arr.length-3,arr.length-1));
+
+    // Упражнение 8. Применить методы reverse() и sort() к массиву
+
+    var colors = ["white","yellow" ,"blue",]
+
+
+    console.log(colors);
+    colors.reverse()
+    console.log(colors);
+    colors.sort()
+    console.log(colors);
+
+    // Упражнение 9. Для массива var arr = [1,2,3,4,5,6] проверьте и поясните полученные значения после выполнения следующих инструкций:
+
+    var arr = [1,2,3,4,5,6]
+
+    arr.splice(3,2)
+    console.log(arr)
+    arr.splice(-5,2)
+    console.log(arr)
+    arr.splice(2,0,7)
+    console.log(arr)
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+  //Лабораторная работа №3
+  //Тема: Язык JavaScript: переменные и примитивные типы данных
+  //Цель: Изучить основные типы данных в JavaScript
+  //Выполнил: Чурин К.В. гр. И-1
+  //Ход работы
+  //1. ЗАКРЕПЛЕНИЕ ЗНАНИЙ. ТИП ДАННЫХ NUMBER (ЧИСЛО)
+  //Упражнение 1 Проверить тип следующих данных:
+var a = 77.123456
+var b = 1
+var c = Infinity
+var d = NaN
+console.log(a, b, c, d)
+console.log(typeof a, b, c, d)
+
+//Упражнение 2. Перевести в десятичный формат числа с плавающей точкой <число> e <количество нулей>:
+var a = 2e-1
+var b = 3e3
+var c = 7.29e2
+var d = 33e-1
+console.log(a.toFixed(10))
+console.log(b.toFixed(10))
+console.log(c.toFixed(10))
+console.log(d.toFixed(10))
+
+//Упражнение 3. Перевести данные в формат с плавающей точкой (метод toExponential):
+var a = 7.1
+var b = 0.000009
+var c = 33.3
+var d = 10.001
+console.log(a.toExponential())
+console.log(b.toExponential())
+console.log(c.toExponential())
+console.log(d.toExponential())
+
+//Упражнение 4. Для числа 1.23456789 перевести в формат с плавающей точкой и количеством цифр после запятой (метод toExponential с параметром):
+var a = 1.23456789
+console.log(a.toExponential(5))
+console.log(a.toExponential(1))
+console.log(a.toExponential(4))
+console.log(a.toExponential(2))
+
+//Упражнение 5. Преобразовать число в строку и проверить тип (метод toString):
+var a = 5
+var b = 77.12345
+var c = 0.1
+var d = 1e1
+console.log(a.toString())
+console.log(b.toString())
+console.log(c.toString())
+console.log(d.toString())
+console.log(typeof a.toString())
+console.log(typeof b.toString())
+console.log(typeof c.toString())
+console.log(typeof d.toString())
+
+//Упражнение 6. Методы округления toFixed и toPrecision. Сравнить округления для чисел:
+var a = 12345.6789
+var b = 1.23e+10
+var c = 1.23e-10
+// 1 to Fixed без параметров
+console.log(a.toFixed())
+console.log(b.toFixed())
+console.log(c.toFixed())
+
+// 2 to Fixed с параметрами 1, 2, 6.
+console.log(a.toFixed(1))
+console.log(a.toFixed(2))
+console.log(a.toFixed(6))
+console.log(b.toFixed(1))
+console.log(b.toFixed(2))
+console.log(b.toFixed(6))
+console.log(c.toFixed(1))
+console.log(c.toFixed(2))
+console.log(c.toFixed(6))
+
+//******************************************************************************
+
+var a = 12345.6789
+var b = 1.23e+10
+var c = 1.23e-10
+
+// 3 toPrecision без параметров
+console.log(a.toPrecision())
+console.log(b.toPrecision())
+console.log(c.toPrecision())
+
+// 4 toPrecision с параметрами 1, 2, 6.
+console.log(a.toPrecision(1))
+console.log(a.toPrecision(2))
+console.log(a.toPrecision(6))
+console.log(b.toPrecision(1))
+console.log(b.toPrecision(2))
+console.log(b.toPrecision(6))
+console.log(c.toPrecision(1))
+console.log(c.toPrecision(2))
+console.log(c.toPrecision(6))
+
+//Упражнение 7. Найти значения свойств:
+Number.MIN_VALUE
+Number.MAX_VALUE
+Number.NAN
+Number.POSITIVE_INFINITY
+Number.NEGATIVE_INFINITY
+
+//Пример 1
+
+var a = "Churin "
+var b = "Kirill "
+var c = "Vasilevich "
+console.log ("Фамилия: " + a + "В этом слове: " + a.length + "букв","Имя: " + b  + "В этом слове: " + b.length + "букв","Отчество: " + c + " В этом слове: " + c.length + "букв")
+
+//Упражнение 2
+var a = "Шла Саша по шоссе"
+console.log ("Первые две буквы  " + a.charAt (0) + a.charAt (1) )
+console.log ("Две последние буквы  " + a.charAt (15) + a.charAt (16) )
+
+//Пример 3
+var a = "Programming"
+console.log(a.toUpperCase());
+console.log(a.toUpperCase(1));
+
+//Пример 4
+
+var a = "Programming"
+console.log(a.toLowerCase());
+console.log(a.toLowerCase(2));
+
+//Упражнение 3
+var a = "Шла Саша по шоссе"
+a.indexOf("Шла")
+a.indexOf("шоссе", 5)
+
+//Упражнение 5
+var a = "шла Саша по шоссе"
+var anew = a[0].toUpperCase( )+a.slice(1,a.length)
+console.log(anew)
+
+//Упражение 6
+var a = "Не хочу учится а хочу женится"
+var newa=a.slice(0,12)+"ь"+a.slice(12,14)+","+a.slice(14,27)+"ь"+a.slice(27,a.length)
+console.log(newa)
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

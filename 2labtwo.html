@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+//Лабораторная работа №2
+//Тема: Типы данных, оператор typeof()
+//Выполнил: Чурин К.В. гр. И-1
+// 1. ПЕРЕМЕННЫЕ
+// Задача 1.
+var fn = "Kirill "
+var ln = "Churin"
+var fun = fn+ln
+console.log (fun)
+
+//Задача 2.
+var a "Программирование";
+console.log(a);
+
+//Задача 3.
+var name, admin;
+name = 'Kirill';
+admin = name;
+console.log (admin);
+
+//Задача 4.
+var a=1000, b=5, c
+c = a;
+a = b;
+b = c;
+console.log (a, b)
+
+//2. ТИПЫ ДАННЫХ
+//Задача 1.
+console.log (12e4,0e-5,123e-3,0xc8,0xfa);
+
+//Основные методы
+//Код
+//1
+var some_number = 3
+console.log(some_number)
+console.log(typeof some_number)
+console.log(typeof(some_number))
+
+//2
+var some_number = 77.1234
+console.log(some_number)
+console.log(some_number.toExponential())
+console.log(some_number.toExponential(4))
+console.log(some_number.toExponential(2))
+
+//3
+var some_number = 77.1234
+console.log(some_number)
+console.log(some_number.toString())
+console.log(some_number.toString(16))
+console.log(typeof some_number.toString())
+
+//4
+console.log((10).toString())
+
+//5
+var some_number = 77.123456789
+console.log(some_number.toPrecision(6))
+
+//6
+var some_number = 12345.6789
+console.log(some_number.toFixed())
+console.log(some_number.toFixed(1))
+console.log(some_number.toFixed(6))
+console.log((1.23e+10).toFixed(2))
+console.log((1.23e-10).toFixed(2))
+
+//Свойства
+//Код
+//1
+Number.MAX_VALUE
+
+//2
+Number.MIN_VALUE
+
+//Обьект Math
+//Код
+//1
+Math.max(12,45,78,123,7)
+
+//2
+Math.acos(1)
+
+//Задание 2
+//Методы
+//Код
+//3
+console.log(Math.asin(120)); //Метод возвращает арксинус числа
+
+//4
+console.log(Math.atan(1)); //Метод возвращает числовое значение из промежутка от -pi/2 до pi/2
+
+//5
+console.log(Math.atan2(90, 2)); //Метод позволяет найти арктангенс от частного своих аргументов
+
+//6
+console.log(Math.exp(25)); //Метод позволяет найти E^x, где x-аргумент, E-число Эйлера приблизительно равное (2,718)
+
+//7
+console.log(Math.min(234, 6786, 434,23412)); // Метод позволяет найти меньшее из аргументов
+
+//8
+console.log(Math.random()); //Метод позволяет найти случайное число  от 0 до 1
+
+//9
+console.log(Math.sqrt(256)); //Метод позволяет найти квадратный корень
+
+//10
+console.log(Math.round(555.69)); //Метод позволяет округлить число,  до ближайшего целогго
+
+//11
+console.log(Math.floor(77)); //Метод находит наибольшее целое число, меньшее, либо равное указанному числу
+
+//12
+console.log(Math.ceil(27)); // Метод находит наименьшее целое, большее или равное указанному числу
+
+//13
+console.log(Math.sin(45)); //Метод находит синус числа
+
+//14
+console.log(Math.cos(60)); //Метод находит косинус числа
+
+//15
+console.log(Math.tan(45)); //Метод находит тангенс числа
+
+//16
+console.log(Math.pow(25, 65)); //Метод позволит найти основание в степени экспоненты т.е. знач выражения основание ^экпонента
+
+//17
+console.log(Math.max(1, 56, 34, 123, 555)); //Медод позволит найти наибольшее из аргументов
+
+//18
+console.log(Math.abs(98)); //Метод возвращает абсолютное значение числа
+
+// Еще несколько методов для логарифмов (могут пригодится)
+console.log(Math.log(4)); //Найти натуральный логарифм
+console.log(Math.log1p(7)); //Найти log(1+x)
+console.log(Math.log10(17)); //Найти десятичный логарифм
+console.log(Math.log2(27)); //Найти двоичный логарифм
+
+//Свойства
+//Код
+//1
+console.log(Math.E); //число Эйлера
+
+//2
+console.log(Math.LN2) //ln из 2
+
+//3
+console.log(Math.LN) //ln из 10
+
+//4
+console.log(Math.LOG2E) //ДВОИЧНЫЙ ЛОГАРИФМ ИЗ е
+
+//5
+console.log(Math.LOG10E) //десятичный логарифм из Е
+
+//6
+console.log(Math.PI) //отношение длины окружности круга к его диаметру
+
+//7
+console.log(Math.SQRT1_2) //корень из 1/2
+
+//8
+console.log(Math.SQRT2) //КОРЕНЬ ИЗ 2
+
+  </script>
+</body>
+</html>
