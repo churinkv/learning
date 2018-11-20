@@ -8,8 +8,113 @@
 <body>
   <script>
 
-    var question = prompt ('В каком году ты поступил в КИПУ?', ' ')
-    if (question != 2017) alert ( 'Не правильно!' )
+//1
+console.log('****1****');
+  var question = prompt ('В каком году ты поступил в КИПУ?', ' ')
+  if (question != 2017) alert ( 'Не правильно!' )
+  if (question != 2018) alert ( 'правильно!' )
+
+//2
+console.log('****2****');
+  var question = prompt('В каком году поступил в КИПУ?', ' 	')
+  if (question != 2017)
+	alert( 'Не правильно!' )
+	alert( 'Подумай хорошо!' )
+
+
+//3
+console.log('****3****');
+var question = prompt('В каком году поступил в КИПУ?', ' ')
+if (question != 2017)
+alert( 'Не правильно!' )
+else
+alert( 'Привет, первокурсник!' )
+
+//4
+console.log('****4****');
+
+
+
+//Упражнения
+
+
+console.log('****Упражнение 1****');
+var a = prompt ('Введите первое число', " ")
+var b = prompt ('Введите второе число', " ")
+if (a > b)
+alert (a)
+else
+alert (b)
+*/
+
+
+console.log('****Упражнение 2****');
+var x = prompt ('Введите первое число', " ")
+var y = prompt ('Введите второе число', " ")
+var c
+if (x>y){
+  c = x
+  x = y
+  y = c}
+  alert (x, y)
+
+
+
+console.log('****Упражнение 3****');
+
+    alert('(Упражнение 3) if(0) не сработает');
+    console.log('if (0) {')
+    console.log('console.log ( "Привет" );')
+    console.log('}')
+    console.log('Ничего не выведет так как условие тождественно ложно и никогда не выполниться')
+
+
+console.log('****Упражнение 4****');
+alert('(Упражнение 4) Нахождение максимальной переменной среди 3 чисел');
+   var A = prompt('Введите число A: ')
+   var B = prompt('Введите число B: ')
+   var C = prompt('Введите число C: ')
+   console.log('A= ' + A)
+   console.log('B= ' + B)
+   console.log('C= ' + C)
+
+       if (A > B) { D = A; } else { D = B; }
+       if (C > D) { D = C; }
+       alert(D);
+       console.log('Наибольшее число: ' + D)
+
+console.log('****Упражнение 5****');
+       alert('(Упражнение 5) Нахождение старшего родителя');
+    var p = prompt('Введите возраст папы: ')
+    var m = prompt('Введите возраст мамы: ')
+
+    console.log('Возраст папы: ' + p)
+    console.log('Возраст мамы: ' + m)
+
+    if (p > m) { console.log('Папа старше мамы'); }
+    else { console.log('Мама старше папы'); }
+
+console.log('****Упражнение 6****');
+alert('(6 задание) Нахождение старшего родителя');
+    var p = prompt('Введите возраст папы: ')
+    var m = prompt('Введите возраст мамы: ')
+
+    console.log('Возраст папы: ' + p)
+    console.log('Возраст мамы: ' + m)
+
+    if (p == m) { console.log('Мои родители - ровестники'); }
+    else {
+        if (p > m) { console.log('Мама старше папы'); }
+        else { console.log('Папа старше мамы'); }
+    }
+
+
+
+
+
+
+
+
 
   </script>
 </body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Calculator</title>
+</head>
+<body>
+  <script>
+
+
+        calc();
+
+        function calc() {
+            var calc = [];
+
+            calc[0] = +prompt('enter number 1 / Введите первое число'); //Унарный + преоборазует String в Number
+            calc[2] = prompt('enter sign / Выберите из +,-,*,/');
+            calc[1] = +prompt('enter number 2 / Введите второе число ');
+
+            if (calc[2] == '+') { calc[3] = calc[0] + calc[1]; }
+
+            if (calc[2] == '-') { calc[3] = calc[0] - calc[1]; }
+
+            if (calc[2] == '*') { calc[3] = calc[0] * calc[1]; }
+
+            if (calc[2] == '/') {
+                if (calc[1] == 0) {
+                    alert('error: division by zero / ошибка: на ноль делить нельзя');
+                    console.log(calc[0] + ' ' + calc[2] + ' ' + calc[1] + ' = ' + 'На ноль делить нельзя');
+                }
+                else {
+                    calc[3] = calc[0] / calc[1];
+                    alert('Результат / result= ' + calc[3]);
+                }
+            }
+            else {
+                alert('Результат / result= ' + calc[3]);
+                console.log(calc[0] + ' ' + calc[2] + ' ' + calc[1] + ' = ' + calc[3]);
+            }
+
+
+        }
+
+
+  </script>
+</body>
+</html>
