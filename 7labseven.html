@@ -9,6 +9,96 @@
 
 <script>
 
+/*
+//ex1
+var question1 = prompt ('В каком году ты поступил в КИПУ?', ' ')
+var question2 = prompt ('What is you name?', ' ')
+if (question1 == 2017 && question2 == "kir")
+alert ( 'правильно!' )
+*/
+
+/*
+//ex2
+var question1 = prompt ('В каком году ты поступил в КИПУ?', ' ')
+var question2 = prompt ('What is you name?', ' ')
+if (question1 == 2017 || question2 == "kir")
+alert ( 'правильно!' )
+*/
+/*
+//ex3
+var question1 = prompt ('В каком году ты поступил в КИПУ?', ' ')
+var question2 = prompt ('What is you name?', ' ')
+if (!(question1 == 2017 || question2 == "kir"))
+alert ( 'правильно!' )
+*/
+/*
+//ex4
+var num=prompt ( "Введи число", "" )
+alert ( ( num>0 ) ? "Число положительное" : "Число отрицательное" )
+*/
+
+console.log('****Упражнение 8.1****');
+var value = +prompt('Введите число: ')
+alert((value == 1000) ? 'Верно' : 'Неверно')
+
+
+console.log('****Упражнение 8.2****');
+
+  var a = 5 + 150;
+
+  switch (a) {
+      case 9:
+          alert('Это меньше а');
+          break;
+      case 10:
+          alert('Это a!');
+          break;
+      case 11:
+          alert('Это больше а');
+          break;
+      default:
+          alert('Это не a!');
+  }
+
+console.log('****Упражнение 9****');
+console.log('с помощью if');
+   var week = [];
+   var lang = prompt('Введите язык (ru или en): ');
+//на русском
+   if (lang == 'ru')
+   {
+       week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+       console.log('Название недель на Русском: ' + week);
+   }
+//на английском
+   if (lang == 'en')
+   {
+       week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+       console.log('Название недель на Английском: ' + week);
+   }
+///////////////////////////////////////////////////////////////////////////////////////////////////
+console.log('с помощью switch-case');
+
+   switch (lang)
+   {
+       case 'ru':
+           week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+           console.log('Название недель на Русском: ' + week);
+           break;
+
+       case 'en':
+           week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+           console.log('Название недель на Английском: ' + week);
+           break;
+   }
+
+// Итог: через свич кейс легче и проще
+
+console.log('****Упражнение 10****');
+
+   var word = prompt('Введите слово: ');
+   console.log(word);
+
 
 
 </script>

@@ -14,29 +14,32 @@
         function calc() {
             var calc = [];
 
-            calc[0] = +prompt('enter number 1 / Введите первое число'); //Унарный + преоборазует String в Number
-            calc[2] = prompt('enter sign / Выберите из +,-,*,/');
-            calc[1] = +prompt('enter number 2 / Введите второе число ');
+            calc[1] = +prompt('enter number 1 / Введите первое число'); //+ преоборазует String в Number
+            calc[3] = prompt('enter sign / Выберите из +,-,*,/');
+            calc[2] = +prompt('enter number 2 / Введите второе число ');
 
-            if (calc[2] == '+') { calc[3] = calc[0] + calc[1]; }
+            if (calc[3] == '+')
+            { calc[4] = calc[1] + calc[2]; }
 
-            if (calc[2] == '-') { calc[3] = calc[0] - calc[1]; }
+            if (calc[3] == '-')
+            { calc[4] = calc[1] - calc[2]; }
 
-            if (calc[2] == '*') { calc[3] = calc[0] * calc[1]; }
+            if (calc[3] == '*')
+            { calc[4] = calc[0] * calc[2]; }
 
-            if (calc[2] == '/') {
-                if (calc[1] == 0) {
+            if (calc[3] == '/') {
+                if (calc[2] == 0) {
                     alert('error: division by zero / ошибка: на ноль делить нельзя');
-                    console.log(calc[0] + ' ' + calc[2] + ' ' + calc[1] + ' = ' + 'На ноль делить нельзя');
+                    console.log(calc[1] + ' ' + calc[2] + ' ' + calc[1] + ' = ' + 'На ноль делить нельзя');
                 }
                 else {
-                    calc[3] = calc[0] / calc[1];
-                    alert('Результат / result= ' + calc[3]);
+                    calc[4] = calc[1] / calc[2];
+                    alert('Результат / result= ' + calc[4]);
                 }
             }
             else {
-                alert('Результат / result= ' + calc[3]);
-                console.log(calc[0] + ' ' + calc[2] + ' ' + calc[1] + ' = ' + calc[3]);
+                alert('Результат / result= ' + calc[4]);
+                console.log(calc[1] + ' ' + calc[3] + ' ' + calc[2] + ' = ' + calc[4]);
             }
 
 
