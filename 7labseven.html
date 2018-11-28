@@ -94,10 +94,19 @@ console.log('с помощью switch-case');
 
 // Итог: через свич кейс легче и проще
 
-console.log('****Упражнение 10****');
+console.log('****Упражнение 11****');
 
    var word = prompt('Введите слово: ');
    console.log(word);
+   var a = word.split("a").length - 1;
+   var e = word.split("e").length - 1;
+   var i = word.split("i").length - 1;
+   var o = word.split("o").length - 1;
+
+     console.log('Содержание в слове буквы "a": ' + a);
+     console.log('Содержание в слове буквы "e": ' + e);
+     console.log('Содержание в слове буквы "i": ' + i);
+     console.log('Содержание в слове буквы "o": ' + o);
 
 
 
