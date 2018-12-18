@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+/*
+//ex 5
+alert('Задание 5 (Сумма 5 элементов массива)');
+var arr = [];
+var sum = 0;
+for (var i = 0; i < 5; i++)
+    {
+    arr[i] = +prompt('Введите arr[' + i + ']: ')
+    sum += arr[i];
+    console.log('arr[' + i + '] = ' + arr[i])
+    }
+console.log('Сумма чисел: ' + sum)
+alert (sum)
+*/
+
+//ex 6
+alert('Задание 6 (Произведение 5 элементов массива)');
+var arr = [];
+var p = 0;
+for (var i = 0; i < 5; i++)
+    {
+    arr[i] = +prompt('Введите arr[' + i + ']: ')
+    p *= arr[i];
+    console.log('arr[' + i + '] = ' + arr[i])
+    }
+console.log('Сумма чисел: ' + p)
+alert (p)
+
+//ex 7
+var A = myrandmass(10, -100, 100);
+var n = 0, x = 0;
+console.log(A);
+for (var i = 0; i < A.length; i++) {
+if (A[i] < 0)
+{
+n += A[i];
+x++;
+}
+}
+n = n / x;
+console.log('Среднее арифметическое отрицательных элементов = ' + n.toFixed(2))
+
+//ex8
+var arr = [], y = [], n = 0;
+var L = +prompt('Введите размер массива: ');
+
+for (var i = 0; i < L; i++)
+{
+arr[i] = prompt('Введите arr[' + i + ']: ');
+if (arr[i] == "key")
+{
+y[n] = i;
+n++;
+}
+console.log('arr[' + i + '] = ' + arr[i]);
+}
+console.log('Индексы в которых находятся слово "key": ' + y);
+
+//ex 9
+var A = myrandmass(10, -100, 100);
+var i1 = 0; i2 = 0, X = [], Y = [];
+console.log(A);
+
+for (var i = 0; i < A.length; i++)
+{
+if (A[i] > 0) { X[i1] = A[i]; i1++;
+}
+if (A[i] < 0) { Y[i2] = A[i]; i2++;
+}
+}
+console.log('Положительный массив: ' + X);
+console.log('Отрицательный массив: ' + Y);
+
+//ex 10
+var A = myrandmass(L, -100, 100);
+var B = [], C = [];
+var L = +prompt('Введите размер массива: ');
+
+for (var i = 0; i < L; i++)
+{
+B[i] = +prompt('Введите arr[' + i + ']: ');
+C[i] = A[i] + B[i];
+}
+console.log('Рандомный массив: ');
+console.log(A);
+console.log('Пользовательский массив: ');
+console.log(B);
+console.log('Итоговый массив: ');
+console.log(C);
+
+//ex 11
+var A = myrandmass(L, -100, 100);
+var L = +prompt('Введите размер массива: ');
+
+console.log(A);
+console.log('Минимальное число массива: ');
+console.log(Math.max.apply(null, A));
+console.log('Максимальное число массива: ');
+console.log(Math.min.apply(null, A));
+
+
+</script>
+</body>
+</html>

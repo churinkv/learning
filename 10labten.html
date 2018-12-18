@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<script>
+
+console.log("trenirovka1");
+var a=0
+while (a<3) {
+  a=a+1
+}
+console.log(a);
+
+console.log("trenirovka2");
+var a=0, c=true
+while (c) {
+  a=a+1
+  if(a==10)
+  c=false
+}
+console.log(a);
+
+console.log("trenirovka3");
+var d,r,sum=0 //207
+d=prompt ( "Введи число" ) // сохраним в d введенное число
+while ( d!=0 )
+{
+		r = d % 10 // найдем целый остаток от деления числа на 10 2%10
+		sum = sum + r
+		d = Math.floor(d / 10) // округлим d / 10  до целого числа
+}
+console.log("sum = " + sum)
+
+
+//Упражнения
+console.log("ex-1")
+for (var i = 0; i < 3; i++)
+{
+console.log( "число i = " + i)
+}
+
+console.log("exxxxxxxxxxxxxxxxxxx 1")
+var a=0
+while (a<3)
+{
+a++
+}
+console.log("Число a= "+ a)
+
+
+console.log("exxxxxxxxxxxxxxxxxxx 2")
+var a =100
+while (a>0)
+{
+console.log(a)
+a-=20
+}
+
+
+console.log("exxxxxxxxxxxxxxxxxxx 3")
+     var a= [], Sum=0
+     do
+      while (a!=0)
+     {
+       a=+prompt("(ex3)Введите число: ")
+       Sum+=a
+     }
+     console.log(Sum)
+
+  console.log("original tsicl 4")
+     var i=10
+     do {
+       i = i+1
+       console.log(i)
+     } while ( i < 15 )
+
+//Упражнение 4. Замените цикл
+//с постусловием из предыдущего примера
+//на цикл с предусловием.
+  console.log("exxxxxxxxxxxxxxxxxxx 4")
+    var i =10
+    while (i<=15) {
+      console.log(i)
+      i++
+    }
+
+//Упражнение 5. Замените цикл
+//с постусловием из предыдущего примера
+//на цикл с параметром.
+  console.log("exxxxxxxxxxxxxxxxxxx 5")
+    var i =10
+    for(i=10; i<=15; i++){
+      console.log(i)
+    }
+
+    //Пример 4. Напишем программу,
+    //которая суммирует цифры введенного целого
+    //числа (эта задача была решена ранее
+    //циклом с предусловием).
+
+    var d,r,sum=0
+    	d=prompt ("Введи число")
+    	do
+    	{
+    		r = d % 10
+    		sum = sum + Number(r)
+    		d = Math.floor(d / 10)
+    	}
+    while (d!=0)
+    console.log("sum = "+sum)
+
+//Исправьте скрипт из упражнения 6 так,
+//чтобы вычислялась сумма положительных чисел
+//и квадратов отрицательных чисел.
+  console.log("exxxxxxxxxxxxxxxxxxx 6")
+    var val, s = 0
+    do{
+        val= +prompt("(ex6)Введите число val:")
+          s+=Math.pow(val,2)
+          console.log(val)
+      } while(s<=100)
+        console.log("s = "+ s);
+
+  console.log("exxxxxxxxxxxxxxxxxxx 7")
+    var val, s1 = 0, s2 = 0
+    do
+    {
+      val= +prompt("(ex7)Введите число val:")
+      if(val<0){
+        s1+=Math.pow(val,2)
+        console.log("s1 = "+ s1)
+      }
+      else if(val>0){
+        s2+=val
+        console.log("s2 = "+ s2)
+      }
+    } while(s1<100&s2<100)
+
+</script>
+</body>
+</html>
