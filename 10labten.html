@@ -41,7 +41,7 @@ for (var i = 0; i < 3; i++)
 {
 console.log( "число i = " + i)
 }
-
+//Упражнение 1. Поясните работу скрипта. Замените цикл for на while.
 console.log("exxxxxxxxxxxxxxxxxxx 1")
 var a=0
 while (a<3)
@@ -50,7 +50,7 @@ a++
 }
 console.log("Число a= "+ a)
 
-
+//Упражнение 2. Сократите код, используя цикл while:
 console.log("exxxxxxxxxxxxxxxxxxx 2")
 var a =100
 while (a>0)
@@ -60,29 +60,36 @@ a-=20
 }
 
 
+//Упражнение 3. Выполнить ввод последовательности чисел, которая
+//заканчивается нулем, и найти сумму чисел.
 console.log("exxxxxxxxxxxxxxxxxxx 3")
-     var a= [], Sum=0
+     var a= []
+     var sum=0
      do
-      while (a!=0)
      {
        a=+prompt("(ex3)Введите число: ")
-       Sum+=a
+       sum+=a
      }
-     console.log(Sum)
+     while (a!=0);
+     console.log(sum)
 
+//оригинальный цикл
   console.log("original tsicl 4")
      var i=10
-     do {
+     do
+     {
        i = i+1
        console.log(i)
-     } while ( i < 15 )
+     }
+     while ( i < 15 )
 
 //Упражнение 4. Замените цикл
 //с постусловием из предыдущего примера
 //на цикл с предусловием.
   console.log("exxxxxxxxxxxxxxxxxxx 4")
-    var i =10
-    while (i<=15) {
+    var i =11
+    while (i<=15)
+    {
       console.log(i)
       i++
     }
@@ -91,16 +98,15 @@ console.log("exxxxxxxxxxxxxxxxxxx 3")
 //с постусловием из предыдущего примера
 //на цикл с параметром.
   console.log("exxxxxxxxxxxxxxxxxxx 5")
-    var i =10
-    for(i=10; i<=15; i++){
+    var i =11
+    for(; i<=15; i++)
+    {
       console.log(i)
     }
 
-    //Пример 4. Напишем программу,
-    //которая суммирует цифры введенного целого
-    //числа (эта задача была решена ранее
-    //циклом с предусловием).
-
+//Пример 4. Напишем программу,которая суммирует цифры введенного целого
+//числа (эта задача была решена ранее циклом с предусловием).
+/*
     var d,r,sum=0
     	d=prompt ("Введи число")
     	do
@@ -111,33 +117,50 @@ console.log("exxxxxxxxxxxxxxxxxxx 3")
     	}
     while (d!=0)
     console.log("sum = "+sum)
-
-//Исправьте скрипт из упражнения 6 так,
-//чтобы вычислялась сумма положительных чисел
-//и квадратов отрицательных чисел.
-  console.log("exxxxxxxxxxxxxxxxxxx 6")
-    var val, s = 0
+    */
+/*
+    Упражнение 6. Задана последовательность чисел. Вычислить сумму квадратов
+    введенных чисел (например, для чисел 5 и 10 получим 5*5+10*10=125). Завершить
+    программу, когда сумма превысит значение 100.
+    Ниже приведен код программы, в котором пропущены фрагменты и допущены
+    ошибки – исправьте их.
+    var val, s
     do{
-        val= +prompt("(ex6)Введите число val:")
-          s+=Math.pow(val,2)
-          console.log(val)
-      } while(s<=100)
-        console.log("s = "+ s);
-
-  console.log("exxxxxxxxxxxxxxxxxxx 7")
-    var val, s1 = 0, s2 = 0
+    …
+    s=s+val*val
+    }
+    while (s=100)
+    console.log (&quot;s = &quot;+s)
+    */
+    console.log("exxxxxxxxxxxxxxxxxxx 6")
+    var val, s = 0
     do
     {
+        val= +prompt("(ex6)Введите число val:")
+        s+=Math.pow(val,2)
+        console.log(val)
+    }
+    while(s<=100)
+    console.log("s = "+ s);
+
+//Упражнение 7. Исправьте скрипт из упражнения 6 так, чтобы вычислялась сумма
+//положительных чисел и квадратов отрицательных чисел.
+  console.log("exxxxxxxxxxxxxxxxxxx 7")
+    var val, s=0
+    do
+      {
       val= +prompt("(ex7)Введите число val:")
-      if(val<0){
-        s1+=Math.pow(val,2)
-        console.log("s1 = "+ s1)
+      if(val<0)
+      {
+      s+=Math.pow(val,2)
+      console.log("s1 = "+ s1)
       }
       else if(val>0){
-        s2+=val
-        console.log("s2 = "+ s2)
+      s+=val
+      console.log("s2 = "+ s2)
       }
-    } while(s1<100&s2<100)
+      }
+      while(s1<100 & s2<100)
 
 </script>
 </body>

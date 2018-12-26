@@ -6,9 +6,73 @@
 </head>
 <body>
 <script>
-
-
-
+//Задание №1
+    function sum(){
+      var a=+prompt("Введите первое число:")
+      var b=+prompt("Введите второе число:")
+      sum=a+b
+      alert("Сумма равна: "+sum)
+    }
+//Задание №2
+  function twoPow()
+  {
+    var a=+prompt("Введите число: ")
+    alert(a+" в квадрате = "+Math.pow(a,2))
+  }
+//Задание №3
+  var summ,av
+  var arr = [2, 4, 6, 8, 10]
+  function averageArr ()
+  {
+    summ = 0
+    for (var i = 0; i<arr.length; ++i) {
+      summ+=arr[i]
+  }
+    av = summ/arr.length;
+    alert(av)
+  }
+  
+//Задание №4
+  function age(){
+    var userAge= +prompt("Введите свой возраст: ")
+      if (userAge>1&userAge<=13)
+        alert("Вы ребенок")
+      else if (userAge>13&userAge<=25)
+        alert("Вы подросток")
+      else if (userAge>25&userAge<=69)
+        alert("Вы взрослый")
+      else if(userAge>=70)
+        alert("Вы старый")
+  }
+//Задание№5
+  var ar = [-2, 4, 216, -8, 10, -114, 14, 1], max=0
+  function arrMax(){
+    for (var i = 0; i<ar.length; ++i) {
+      if (ar[i]<-10)
+        ar[i]=0
+      else if (ar[i]>10)
+        ar[i]=0
+      }
+    for (i=0; i<ar.length; i++){
+    if (max<ar[i])
+      max=ar[i]
+    }
+    alert(max)
+    }
+//Задание №6
+function age1(){
+  var userge= +prompt("Введите свой возраст: ")
+    if (userge>=14&userge<=90)
+      alert("Ваш возраст входит в заданный промежуток")
+  }
 </script>
+
+  <input type="button" value="Ex1" onclick="sum()">
+  <input type="button" value="Ex2" onclick="twoPow()">
+  <input type="button" value="Ex3" onclick="averageArr()">
+  <input type="button" value="Ex4" onclick="age()">
+  <input type="button" value="Ex5" onclick="arrMax()">
+  <input type="button" value="Ex6" onclick="age1()">
+
 </body>
 </html>
